@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拓元售票系統 - 系統忙碌中</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="waiting-container">
+        <div class="logo-area">
+            <h1>tixCraft 拓元</h1>
+            <span class="badge">系統流量管制中</span>
+        </div>
+
+        <div class="message-box">
+            <h2>⚠️ 目前線上人數過多，請稍候</h2>
+            <p>由於熱門演唱會搶票人潮湧現，系統正全力為您保留排隊權位。</p>
+            <p><strong>請勿關閉或重新整理頁面</strong>，以免遺失您的優先權益。</p>
+        </div>
+
+        <div class="queue-info">
+            <div class="info-item">
+                <span>您的預估排隊序號：</span>
+                <span id="queue-number" class="highlight">1,288</span>
+            </div>
+            <div class="info-item">
+                <span>預計等待時間：</span>
+                <span id="countdown" class="highlight">03:45</span>
+            </div>
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="footer-tips">
+            <p>若久候未進入，您也可以改至其他通路購票（如：全台 7-11 ibon 機台）。</p>
+            <button id="retry-btn" class="retry-button">重新檢查連線狀態</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
